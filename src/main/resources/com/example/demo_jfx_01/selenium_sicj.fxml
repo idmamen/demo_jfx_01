@@ -43,11 +43,11 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<VBox id="vbox" depthTest="DISABLE" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: trnasparent;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo_jfx_01.HelloController">
+<VBox id="vbox" fx:id="vBoxPrincipal" depthTest="DISABLE" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: trnasparent;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo_jfx_01.HelloController">
   <children>
-    <SplitPane focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+    <SplitPane fx:id="pantallaPrincipal" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
       <items>
-        <AnchorPane style="-fx-background-color: black; -fx-background-radius: 18;">
+        <AnchorPane fx:id="pantallaInicio" onDragDetected="#clickMoverPantalla" style="-fx-background-color: black; -fx-background-radius: 18;">
           <children>
             <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" textAlignment="CENTER" wrapText="false">
               <font>
@@ -57,7 +57,7 @@
                 <Color red="0.624" green="0.624" blue="0.624" fx:id="x2" />
               </textFill>
             </Label>
-                  <Button id="btnCrearTest" cancelButton="true" contentDisplay="CENTER" defaultButton="true" layoutX="365.0" layoutY="176.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="168.0" style="-fx-border-radius: 64; -fx-border-color: blue; -fx-background-radius: 64; -fx-background-color: blue;" text="Crear Test" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                  <Button id="btnCrearTest" fx:id="btnCrearTest" cancelButton="true" contentDisplay="CENTER" defaultButton="true" layoutX="365.0" layoutY="176.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="168.0" style="-fx-border-radius: 64; -fx-border-color: blue; -fx-background-radius: 64; -fx-background-color: blue;" text="Crear Test" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -72,7 +72,7 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Button>
-                  <Button id="btnOpciones" cancelButton="true" contentDisplay="CENTER" defaultButton="true" layoutX="365.0" layoutY="306.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="168.0" style="-fx-border-radius: 64; -fx-border-color: blue; -fx-background-radius: 64; -fx-background-color: blue;" text="Opciones" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                  <Button id="btnOpciones" fx:id="btnOpciones" cancelButton="true" contentDisplay="CENTER" defaultButton="true" layoutX="365.0" layoutY="306.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="168.0" style="-fx-border-radius: 64; -fx-border-color: blue; -fx-background-radius: 64; -fx-background-color: blue;" text="Opciones" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -87,7 +87,7 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Button>
-                  <Button id="btnEjecutarTest" cancelButton="true" contentDisplay="CENTER" defaultButton="true" layoutX="365.0" layoutY="240.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="168.0" style="-fx-border-radius: 64; -fx-border-color: blue; -fx-background-radius: 64; -fx-background-color: blue;" text="Ejecutar Test" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                  <Button id="btnEjecutarTest" fx:id="btnEjecutarTest" cancelButton="true" contentDisplay="CENTER" defaultButton="true" layoutX="365.0" layoutY="240.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="168.0" style="-fx-border-radius: 64; -fx-border-color: blue; -fx-background-radius: 64; -fx-background-color: blue;" text="Ejecutar Test" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
