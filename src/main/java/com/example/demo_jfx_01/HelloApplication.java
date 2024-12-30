@@ -22,6 +22,8 @@ public class HelloApplication extends Application {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("selenium_sicj.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 900, 600);
             scene.setFill(Color.TRANSPARENT);
+            //stage.initStyle(StageStyle.DECORATED.UNDECORATED);
+
             //stage.setTitle("Hello!");
             stage.setScene(scene);
             stage.show();
@@ -29,7 +31,6 @@ public class HelloApplication extends Application {
             System.out.println(e.getMessage());
         }
     }
-
 
 
     public static void main(String[] args) {
